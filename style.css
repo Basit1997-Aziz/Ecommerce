@@ -1,0 +1,96 @@
+body{
+    background: #f4f4f4;
+}
+
+#upper-navbar{
+    top: 0px;;
+    background: white;
+    width: 100%;
+    color: #333;
+    position: fixed;
+    padding: 10px;
+    z-index: 1;
+}
+
+#upper-navbar .search-container{
+    float: right;
+    width: 70%;
+    padding-top: 10px;
+}
+
+#upper-navbar .btn-default{
+    border: 1px solid #E55d4d;
+}
+
+#upper-navbar .row{
+    border-bottom: 3px solid #E55d4d;
+}
+
+#main-navbar{
+    margin-top: 70px;
+    background: #E55d4d;
+    width: 100%;
+}
+
+#main-navbar .nav{
+    margin: 0px auto;
+}
+
+
+#main-navbar .nav-link{
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    padding: 15px 30px;
+    padding-top: 20px;
+}
+
+#main-navbar .nav-link:hover{
+    background: white;
+    color: coral;
+    opacity: 70%;
+}
+
+#header-section .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+#section-title b{
+    display: block;
+    flex: 1;
+    height: 2px;
+    opacity: 0.3;
+    background-color: #555555;
+    font-weight: bolder;
+}
+
+#section-title .section-title{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#section-title span {
+    margin-right: 15px;
+}
+
+#section-body .card-width{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* #section-body img{
+    height: 300px;
+} */
+
+#section-body .btn-width-100{
+    width: 100%;
+    background-color: #E55d4d;
+    color: white;
+    font-weight: bolder;
+}
