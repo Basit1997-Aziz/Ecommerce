@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Ecommerce</title>
+</head>
+<body>
+    <!-- Nav-bar -->
+    <nav id="main-navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 col">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#home" class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">Shop<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/men.html">Men's Wear</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/women.html">Women's Wear</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/laptop.html">Laptops</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/cellphone.html">Cellphones</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/accessories.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link" data-toggle="modal" data-target="#myModal">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col">
+                    <div class="search-container">
+                        <form class="">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search" name="search">
+                              <a href="#"><i class="fa fa-search btn-default"></i></a>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- header -->
+    <section id="header-contact">
+        <div class="bg-image" >
+            <div class="overlay-dark">
+                <div class="header-content">
+                    <h1>GET IN TOUCH</h1>
+                    <P>Want to get in touch? We'd love to hear from you. Here's how you can reach us..</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section id="contact-description">
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-md-6 py-2">
+                    <form >
+                        <div class="form-group">
+                            <label>Name:</label>
+                            <input class="form-control" type="text" placeholder="Fullname">                            
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input class="form-control" type="text" placeholder="Email">                            
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Number:</label>
+                            <input class="form-control" type="text" placeholder="Contact Number">                            
+                        </div>
+                        <div class="form-group">
+                            <label>Tell us more about yourself:</label>
+                            <textarea placeholder="About yourself" rows="5" class="form-control"></textarea>                            
+                        </div>
+                        <button class="btn btn-danger form-control">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 p-2">
+
+                    <div style="width: 100%">
+                        <iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;
+                        hl=en&amp;q=karachi+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            <a href="https://www.maps.ie/coordinates.html">gps coordinates</a>
+                        </iframe>
+                    </div>
+
+                        <address>
+                        ABC Building<br /> 
+                        XYZ Road<br />
+                        example.com<br />
+                        00 Street, Karachi<br />
+                        Pakistan.<br />
+                        Email:<a href="#">info@company.com</a><br />
+                        Contact: +92 341 2336056
+                        </address>
+                         
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark mt-3">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-lg-6 col-md-4 col-sm-2"></div>
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                <h3 class="text-light f-right">Stay Connect <span><i class='fab fa-facebook mx-2'></i></span>                   
+                    <span><i class='fab fa-google-plus mr-2'></i></span>                   
+                    <span><i class='fab fa-twitter-square'></i></span>                   
+                </h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+     <!-- SignIn Modal -->
+     <div class="container">
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content bg-theme">
+              <div class="modal-header">
+                <h4 class="modal-title text-light">LogIn</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <input type="email" class="form-control mb-2" placeholder="Email or Username" id="email">
+                    <input type="password" class="form-control " placeholder="Password" id="pwd">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default modal-button-width bg-success text-light" data-dismiss="modal">LogIn</button>
+                <button type="button" class="btn btn-default modal-button-width bg-danger text-light" data-dismiss="modal">Cancel</button>
+                <a class="modal-a" href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">SignUp</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+    </div>
+  
+    <!-- SignUp Modal -->
+    <div class="container">
+      
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content bg-theme">
+              <div class="modal-header">
+                <h4 class="modal-title text-light">LogIn</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <input type="text" class="form-control mb-2" placeholder="Firstname">
+                    <input type="text" class="form-control mb-2" placeholder="Lastname">
+                    <input type="email" class="form-control mb-2" placeholder="Email">
+                    <input type="text" class="form-control mb-2" placeholder="Phone Number">
+                    <input type="password" class="form-control mb-2" placeholder="Password">
+                    <input type="password" class="form-control " placeholder="Confirm Password">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default modal-button-width bg-success text-light" data-dismiss="modal">Register</button>
+                <button type="button" class="btn btn-default modal-button-width bg-danger text-light" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>   
+    </div>
+
+
+</body>
+</html>

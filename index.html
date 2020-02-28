@@ -5,50 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Ecommerce</title>
 </head>
 <body>
+    
     <!-- Nav-bar -->
-    <nav id="upper-navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col">
-                    <h1>A-Z Shop</h1>
-                </div>
-                <div class="col-md-8 col-sm-8 col">
-                    <div class="search-container">
-                        <form class="">
-                            <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Search" name="search">
-                              <div class="input-group-btn">
-                                <button class="btn btn-default" >Search</button>
-                              </div>
-                            </div>
-                          </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <nav id="main-navbar">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
+                <div class="col-sm-2">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
                     <ul class="nav">
                         <li class="nav-item">
                             <a href="#home" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link">Shop</a>
+                        <li class="nav-item dropdown">
+                            <a href="#home" class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">Shop<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/men.html">Men's Wear</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/women.html">Women's Wear</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/laptop.html">Laptops</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/cellphone.html">Cellphones</a></li>
+                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./shop/accessories.html">Accessories</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">About Us</a>
+                            <a href="./about.html" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Contact Us</a>
+                            <a href="./contact.html" class="nav-link">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a href="#home" class="nav-link" data-toggle="modal" data-target="#myModal">Sign In</a>
@@ -57,6 +52,18 @@
                             <a href="#home" class="nav-link">Cart</a>
                         </li>
                     </ul>
+                    <!-- </div> -->
+                </div>
+                <div class="col-md-4 col-sm-4 col">
+                    <div class="search-container">
+                        <form class="">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search" name="search">
+                              <a href="#"><i class="fa fa-search btn-default"></i></a>
+                            </div>
+                          </form>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -103,8 +110,39 @@
           </div>
     </header>
 
+    <!-- Services -->
+    <section id="services-section">
+        <div class="container mt-4">
+            <div class="row align-items-center bg-white">
+                <div class="col-lg-4 col-md-4 col-sm-4 border-line text-center">
+                    <a href="#" data-toggle="collapse" data-target="#service">
+                    <img class="img-fluid" src="./img/icons/24-hours-services.png" alt="24/7 Service">
+                    </a>
+                    <div id="service" class="collapse">
+                        <h3>24 Hours Service </h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 border-line text-center">
+                    <a href="#" data-toggle="collapse" data-target="#service">
+                    <img class="img-fluid" src="./img/icons/fast-delivery.png" alt="24/7 Service">
+                    </a>
+                    <div id="service" class="collapse">
+                        <h3>Fast Delivery </h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                    <a href="#" data-toggle="collapse" data-target="#service">
+                    <img class="img-fluid" src="./img/icons/return-policy.png" alt="24/7 Service">
+                    </a>
+                    <div id="service" class="collapse">
+                        <h3>Return Policy</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <!-- Feature Product Title -->
-    <div class="container py-4" id="section-title">
+    <div class="container pt-4 pb-2" id="section-title">
         <h3  class="section-title">
             <span>FEATURE PRODUCT</span>
             <b></b>
@@ -116,44 +154,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/traditional/img-women-traditional (4).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/women/traditional/img-women-traditional (4).jpg" alt="Card image">
                         <div class="card-body">
-                          <h4 class="card-title">Sale</h4>
+                          <h4 class="card-title">Sale</h4>  </a>
                           <p class="card-text">Lorem, ipsum dolor.</p>
                           <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/traditional/img-women-traditional (5).jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Sale</h4>
-                            <p class="card-text">Lorem, ipsum dolor.</p>
-                            <a href="#" class="btn btn-width-100">Add To Cart</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/traditional/img-women-traditional (7).jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Sale</h4>
-                            <p class="card-text">Lorem, ipsum dolor.</p>
-                            <a href="#" class="btn btn-width-100">Add To Cart</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/traditional/img-women-traditional (3).jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Sale</h4>
-                            <p class="card-text">Lorem, ipsum dolor.</p>
-                            <a href="#" class="btn btn-width-100">Add To Cart</a>
-                        </div>
                     </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/women/traditional/img-women-traditional (5).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Sale</h4>    </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/women/traditional/img-women-traditional (7).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Sale</h4>    </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/women/traditional/img-women-traditional (3).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Sale</h4>    </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -162,7 +204,7 @@
 
 
     <!-- Men Product Title -->
-    <div class="container py-4" id="section-title">
+    <div class="container pt-4 pb-2" id="section-title">
         <h3  class="section-title">
             <span>MEN PRODUCTS</span>
             <b></b>
@@ -174,84 +216,92 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/accessories/img-men-access (2).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/men/accessories/img-men-access (2).jpg" alt="Card image">
                         <div class="card-body">
-                          <h4 class="card-title">Men-</h4>
+                          <h4 class="card-title">Men-</h4>  </a>
                           <p class="card-text">Lorem, ipsum dolor.</p>
                           <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/jeans/img-men-jeans (2).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/men/jeans/img-men-jeans (2).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Men-</h4>
+                            <h4 class="card-title">Men-</h4>    </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/shirt/img-men-shirt (5).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/men/shirt/img-men-shirt (5).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Men-</h4>
+                            <h4 class="card-title">Men-</h4>    </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/shoes/img-men-shoes (1).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/men/shoes/img-men-shoes (1).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Men-</h4>
+                            <h4 class="card-title">Men-</h4>    </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/accessories/img-men-access (4).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/men/accessories/img-men-access (4).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Men-</h4>
+                            <h4 class="card-title">Men-</h4>    </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/jeans/img-men-jeans (4).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/men/jeans/img-men-jeans (4).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Men-</h4>
+                            <h4 class="card-title">Men-</h4>    </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/accessories/img-men-access (1).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/men/accessories/img-men-access (1).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Men-</h4>
+                            <h4 class="card-title">Men-</h4>    </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/men/tshirt/img-men-tshirt (5).jpg" alt="Card image">
+                    <a href="#">
+                      <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/men/tshirt/img-men-tshirt (5).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Men-</h4>
+                            <h4 class="card-title">Men-</h4>    </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
-                    </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -259,7 +309,7 @@
     </section>
 
      <!-- Women Product Title -->
-     <div class="container py-4" id="section-title">
+     <div class="container pt-4 pb-2" id="section-title">
         <h3  class="section-title">
             <span>WOMEN PRODUCTS</span>
             <b></b>
@@ -271,89 +321,360 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/shoes/img-women-shoes (2).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/women/shoes/img-women-shoes (2).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
+                            <h4 class="card-title">Women-</h4>  </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/tops/img-women-top (1).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/women/tops/img-women-top (1).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
-                            <p class="card-text">Lorem, ipsum dolor.</p>
-                            <a href="#" class="btn btn-width-100">Add To Cart</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/traditional/img-women-traditional (9).jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
-                            <p class="card-text">Lorem, ipsum dolor.</p>
-                            <a href="#" class="btn btn-width-100">Add To Cart</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/shoes/img-women-shoes (4).jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
-                            <p class="card-text">Lorem, ipsum dolor.</p>
-                            <a href="#" class="btn btn-width-100">Add To Cart</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/tops/img-women-top (5).jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
-                            <p class="card-text">Lorem, ipsum dolor.</p>
-                            <a href="#" class="btn btn-width-100">Add To Cart</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/traditional/img-women-traditional (8).jpg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
+                            <h4 class="card-title">Women-</h4>  </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/tops/img-women-top (3).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/women/traditional/img-women-traditional (9).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
+                            <h4 class="card-title">Women-</h4>  </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
                     <div class="card card-width">
-                        <img class="card-img-top" src="./img/women/traditional/img-women-traditional (7).jpg" alt="Card image">
+                        <img class="card-img-top img-responsive" src="./img/women/shoes/img-women-shoes (4).jpg" alt="Card image">
                         <div class="card-body">
-                            <h4 class="card-title">Women-</h4>
+                            <h4 class="card-title">Women-</h4>  </a>
                             <p class="card-text">Lorem, ipsum dolor.</p>
                             <a href="#" class="btn btn-width-100">Add To Cart</a>
                         </div>
-                    </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/women/tops/img-women-top (5).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Women-</h4>  </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/women/traditional/img-women-traditional (8).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Women-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/women/tops/img-women-top (3).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Women-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/women/traditional/img-women-traditional (7).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Women-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
 
     </section>
+
+
+     <!-- Accessories Title -->
+     <div class="container pt-4 pb-2" id="section-title">
+        <h3  class="section-title">
+            <span>ACCESSORIES</span>
+            <b></b>
+        </h3>
+    </div>
+    
+    <!-- Accessories Product Section -->
+    <section id="section-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (1).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (2).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (3).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (4).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (5).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (6).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (7).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/accessories/img-accessories (8).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Accessories-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+     <!-- Cellphone Title -->
+     <div class="container pt-4 pb-2" id="section-title">
+        <h3  class="section-title">
+            <span>CELLPHONE</span>
+            <b></b>
+        </h3>
+    </div>
+    
+    <!-- Cellphone Product Section -->
+    <section id="section-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/cellphones/img-cellphone (1).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Cellphone-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/cellphones/img-cellphone (2).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Cellphone-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/cellphones/img-cellphone (3).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Cellphone-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/cellphones/img-cellphone (4).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Cellphone-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+       <!-- Laptop Title -->
+    <div class="container pt-4 pb-2" id="section-title">
+        <h3  class="section-title">
+            <span>LAPTOP</span>
+            <b></b>
+        </h3>
+    </div>
+    
+    <!-- Laptop Product Section -->
+    <section id="section-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/laptops/img-laptop (1).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Laptop-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/laptops/img-laptop (2).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Laptop-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/laptops/img-laptop (3).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Laptop-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#">
+                    <div class="card card-width">
+                        <img class="card-img-top img-responsive" src="./img/laptops/img-laptop (4).jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Laptop-</h4>
+                        </a>
+                            <p class="card-text">Lorem, ipsum dolor.</p>
+                            <a href="#" class="btn btn-width-100">Add To Cart</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark mt-3">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-lg-6 col-md-4 col-sm-2"></div>
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                <h3 class="text-light f-right">Stay Connect <span><i class='fab fa-facebook mx-2'></i></span>                   
+                    <span><i class='fab fa-google-plus mr-2'></i></span>                   
+                    <span><i class='fab fa-twitter-square'></i></span>                   
+                </h3>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- SignIn Modal -->
@@ -364,22 +685,58 @@
           <div class="modal-dialog">
           
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content bg-theme">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title text-light">LogIn</h4>
               </div>
               <div class="modal-body">
-                <p>Some text in the modal.</p>
+                <form>
+                    <input type="email" class="form-control mb-2" placeholder="Email or Username" id="email">
+                    <input type="password" class="form-control " placeholder="Password" id="pwd">
+                </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default modal-button-width bg-success text-light" data-dismiss="modal">LogIn</button>
+                <button type="button" class="btn btn-default modal-button-width bg-danger text-light" data-dismiss="modal">Cancel</button>
+                <a class="modal-a" href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">SignUp</a>
               </div>
             </div>
             
           </div>
         </div>
         
+    </div>
+  
+    <!-- SignUp Modal -->
+    <div class="container">
+      
+        <!-- Modal -->
+        <div class="modal fade" id="signupModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content bg-theme">
+              <div class="modal-header">
+                <h4 class="modal-title text-light">LogIn</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <input type="text" class="form-control mb-2" placeholder="Firstname">
+                    <input type="text" class="form-control mb-2" placeholder="Lastname">
+                    <input type="email" class="form-control mb-2" placeholder="Email">
+                    <input type="text" class="form-control mb-2" placeholder="Phone Number">
+                    <input type="password" class="form-control mb-2" placeholder="Password">
+                    <input type="password" class="form-control " placeholder="Confirm Password">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default modal-button-width bg-success text-light" data-dismiss="modal">Register</button>
+                <button type="button" class="btn btn-default modal-button-width bg-danger text-light" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>   
     </div>
 
 
