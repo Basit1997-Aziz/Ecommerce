@@ -12,55 +12,48 @@
     <title>Ecommerce</title>
 </head>
 <body>
-    <!-- Nav-bar -->
-    <nav id="main-navbar">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-2 col">
-                    <h1>Logo</h1>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="../index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#home" class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">Shop<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./men.html">Men's Wear</a></li>
-                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./women.html">Women's Wear</a></li>
-                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./laptop.html">Laptops</a></li>
-                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./cellphone.html">Cellphones</a></li>
-                                <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./accessories.html">Accessories</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../about.html" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../contact.html" class="nav-link">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link" data-toggle="modal" data-target="#myModal">Sign In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link">Cart</a>
-                        </li>
+         <!-- Navbar -->
+         <nav id="main-navbar" class="navbar navbar-expand-md bg-theme navbar-dark">
+            <a class="navbar-brand" href="#"><h2>Logo</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav navbar-nav ml-auto">
+                <!-- <li class="nav-item ">
+                    <form class="form-inline">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <span><button class="btn btn-light">Search</button> </span>    
+                    </form>
+                </li> -->
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#home" class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">Shop<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./men.html">Men's Wear</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./women.html">Women's Wear</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./laptop.html">Laptops</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./cellphone.html">Cellphones</a></li>
+                        <li class="nav-item"><a class="nav-link dropdown-bg-color" href="./accessories.html">Accessories</a></li>
                     </ul>
-                </div>
-                <div class="col-md-4 col-sm-4 col">
-                    <div class="search-container">
-                        <form class="">
-                            <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Search" name="search">
-                              <a href="#"><i class="fa fa-search btn-default"></i></a>
-                            </div>
-                          </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../contact.html" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-toggle="modal" data-target="#myModal">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Cart</a>
+                </li>
+              </ul>
+            </div>  
+          </nav>
 
     <div class="top-spacing"></div>
 
